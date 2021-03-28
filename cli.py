@@ -19,16 +19,23 @@ def start():
     )
 
     while 1:
-        user_input = prompt('> ',
-                            history=FileHistory('history.txt'),
-                            auto_suggest=AutoSuggestFromHistory(),
-                            completer=command_completer,
-                            complete_while_typing=True
-                            )
+        try:
+            user_input = prompt('> ',
+                                history=FileHistory('history.txt'),
+                                auto_suggest=AutoSuggestFromHistory(),
+                                completer=command_completer,
+                                complete_while_typing=True
+                                )
+
+        except (EOFError, KeyboardInterrupt):
+            break
+
 
         if user_input == "exit":
             break
 
         print(user_input)
+
+    print("Bye! Hope to see you again soon :)")
 
 

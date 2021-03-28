@@ -1,2 +1,2 @@
 def message():
-    print("Welcome to the CLI\n")
+    print("\nWelcome to the CLI\n")
