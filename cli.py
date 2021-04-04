@@ -2,6 +2,7 @@ from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
 from prompt_toolkit.completion import WordCompleter, PathCompleter
+from prompt_toolkit.shortcuts import clear
 
 from util import message
 
@@ -31,10 +32,15 @@ def start():
             break
 
 
+        print(user_input)
+
         if user_input == "exit":
             break
 
-        print(user_input)
+        elif user_input == "clear":
+            clear()
+
+
 
     print("Bye! Hope to see you again soon :)")
 

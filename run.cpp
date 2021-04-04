@@ -17,6 +17,8 @@ int main() {
 
   void * args[] = {};
 
+  // figure out which function from the MetaCall API will be best
+  // to call the function here and to call the callbacks
   ret = metacallv("start", args);
 
   metacall_destroy();
