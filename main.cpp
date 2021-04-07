@@ -19,7 +19,7 @@ int main() {
 
   const char * py_scripts[] =
   {
-    "cli.py",
+    "prompt.py",
     "util.py"
   };
 
