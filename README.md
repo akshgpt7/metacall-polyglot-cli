@@ -21,6 +21,6 @@ If you face any problems during the install, refer [here](https://github.com/met
 2. Run the REPL: `LD_LIBRARY_PATH=/usr/local/lib ./a.out`
 
 ## Usage:
-Currently only `exit` and `clear` commands work since there is no parser to parse the input commands.
+Currently only an `exit` command works since there is no parser to parse the input commands.
 
-This program is a PoC that a Python REPL can be bootstrapped from C++.
+This program is a PoC that a REPL can be created using Python and C++ working together.
